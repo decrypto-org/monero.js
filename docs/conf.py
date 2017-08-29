@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# monerojs documentation build configuration file, created by
-# sphinx-quickstart on Mon Aug 28 15:24:18 2017.
+# Monero_docs documentation build configuration file, created by
+# sphinx-quickstart on Tue Aug 29 13:53:19 2017.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -30,7 +30,7 @@
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.autodoc']
+extensions = []
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -38,19 +38,14 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-from recommonmark.parser import CommonMarkParser
-
-source_parsers = {
-	'.md': CommonMarkParser,
-}
-source_suffix = ['.rst', '.md']
-# source_suffix = '.rst'
+# source_suffix = ['.rst', '.md']
+source_suffix = '.rst'
 
 # The master toctree document.
-master_doc = 'master_Document'
+master_doc = 'index'
 
 # General information about the project.
-project = u'monerojs'
+project = u'Monero_docs'
 copyright = u'2017, Decrypto-org'
 author = u'Decrypto-org'
 
@@ -73,7 +68,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = []
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -119,7 +114,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'monerojsdoc'
+htmlhelp_basename = 'Monero_docsdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -146,7 +141,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'monerojs.tex', u'monerojs Documentation',
+    (master_doc, 'Monero_docs.tex', u'Monero\\_docs Documentation',
      u'Decrypto-org', 'manual'),
 ]
 
@@ -156,7 +151,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'monerojs', u'monerojs Documentation',
+    (master_doc, 'monero_docs', u'Monero_docs Documentation',
      [author], 1)
 ]
 
@@ -167,31 +162,10 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'monerojs', u'monerojs Documentation',
-     author, 'monerojs', 'One line description of project.',
+    (master_doc, 'Monero_docs', u'Monero_docs Documentation',
+     author, 'Monero_docs', 'One line description of project.',
      'Miscellaneous'),
 ]
 
-
-
-# -- Options for Epub output ----------------------------------------------
-
-# Bibliographic Dublin Core info.
-epub_title = project
-epub_author = author
-epub_publisher = author
-epub_copyright = copyright
-
-# The unique identifier of the text. This can be a ISBN number
-# or the project homepage.
-#
-# epub_identifier = ''
-
-# A unique identification for the text.
-#
-# epub_uid = ''
-
-# A list of files that should not be packed into the epub file.
-epub_exclude_files = ['search.html']
 
 

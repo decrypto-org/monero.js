@@ -1,10 +1,10 @@
-.. monerojs documentation master file, created by
-   sphinx-quickstart on Mon Aug 28 15:24:18 2017.
+.. Monero_docs documentation master file, created by
+   sphinx-quickstart on Tue Aug 29 13:53:19 2017.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to monerojs's documentation!
-====================================
+Welcome to Monero_docs's documentation!
+=======================================
 
 .. toctree::
    :maxdepth: 2
